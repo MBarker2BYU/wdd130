@@ -179,7 +179,7 @@ h2 {
   display: flex;
   justify-content: center;    
   align-content: space-between;
-  border: 2x dashed green;
+  /* border: 2px dashed green; */
   margin: 3rem;
 }
 
