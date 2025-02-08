@@ -240,3 +240,84 @@ This is to allow center copyright*/
   width: 32px;
   margin-top: 5px; /* Ugly but works */
 }
+
+.footer-social-media-hidden a{
+  color: var(--color_white);
+  font-family: var(--text_font);
+  font-size: 20px;
+}
+
+form{
+  width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: var(--accent1_color);
+  display: grid;
+}
+
+fieldset{
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+
+legend{
+  padding: 0.5rem;
+  color: var(--color_white);
+  text-shadow: 4px 4px 6px var(--shadow_color);
+  font-size: 1.3em;
+}
+
+label, input, button, select, textarea{
+  color: var(--color_white);
+  font-family: var(--text_font);
+  font-size: 20px;
+  text-shadow: 4px 4px 6px var(--shadow_color);
+}
+
+label{
+  text-align: right;
+  padding-right: 1rem;
+}
+
+input, select, textarea{
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="radio"]{
+  margin: 10px auto;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+button{
+  margin: 1rem;
+  background-color: var(--accent2_color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  width: 150px;       
+}
+
+.form-item {
+  display: grid;
+  align-items:center;    
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;    
+}
+

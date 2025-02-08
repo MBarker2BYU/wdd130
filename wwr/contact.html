@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew D. Barker | CSS: About Us</title>
-    <meta name="description" content="WDD130: Web Fundamwentals White Water Rafting 'About' page.">
+    <title>Matthew D. Barker | CSS: Contact Us</title>
+    <meta name="description" content="WDD130: Web Fundamwentals White Water Rafting 'Contact Us' page.">
     <meta name="author" content="Matthew D. Barker">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +13,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-    <header>        
+    <header>
         <img src="./images/Logo_Updated.png" alt="Logo" class="logo">
         <nav>
             <ul>
@@ -22,17 +24,81 @@
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>        
+        </nav>
     </header>
     <main>
-      <section>
-        <h2>Under Construction!</h2>
-        <img src="images/underconstruction.jpg" alt="Under Construction" class="center">
-    </section>
+        <section>
+            <div>
+                <h1>Rapid Adventures</h1>
+                <img src="./images/rapid_adventure2.jpg" alt="Rapid Adventure">
+            </div>
+        </section>
+        <section class="adenture">
+            <h2>Meet Our Teams</h2>
+            <div class="adventure-flex-container">
+                <figure class="adventure-item">
+                    <img src="./images/moe.jpg" alt="Employee 1">
+                    <p>Larry</p>
+                </figure>
+                <figure class="adventure-item">
+                    <img src="./images/moe.jpg" alt="Employee 2">
+                    <p>Moe</p>
+                </figure>
+                <figure class="adventure-item">
+                    <img src="./images/moe.jpg" alt="Employee 3">
+                    <p>Curly</p>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <div>
+                <p>Address: 101 Way up the river, Riverview, CA 99999
+                </p>
+                <p>Phone: (239) 555-1212</p>
+                <p>Email: general@rapid.adentures.com</p>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d171094.47053914948!2d-118.43607525199906!3d35.72226290653285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1738770759561!5m2!1sen!2sus"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <div class="form-item column2">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="usermail">
+                </div>
+                <div class="form-item column2">
+                    <label for="reason">How can we help you?</label>
+                    <div>
+                        <label><input type="radio" name="reason" value="General Inquiry" required> General</label>
+                        <label><input type="radio" name="reason" value="Reservation Question"> Reservations</label>
+                        <label><input type="radio" name="reason" value="Website Suggestion"> Website Suggestion</label>
+                    </div>
+                </div>
+                <div class="form-item column 2" center-text>
+                    <label class="center-text" for="feedback">Message:</label>
+                    <textarea name="feedback" id="feedback" rows="4" placeholder="Type Message Here"></textarea>
+                </div>
+            </fieldset>
+            <div class="center-text">
+                <button type="Send Message">Submit Poll</button>
+            </div>
+        </form>
     </main>
     <footer>
         <div class="footer-flex-container">
-            <div class="footer-social-media-hidden"></div>
+            <div class="footer-social-media-hidden">
+                <a href="https://app.moqups.com/r2cfahJQUM4ZEAjjRJZMSjGEAacjzC3y/view/page/ad64222d5">Wireframe</a>
+            </div>
             <div class="footer-copyright">
                 <p>&copy; 2025 Rapid Adventures. | Matthew D. Barker</p>
             </div>
@@ -44,4 +110,5 @@
         </div>
     </footer>
 </body>
+
 </html>
