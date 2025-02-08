@@ -77,20 +77,24 @@
                     <input type="email" id="useremail" name="usermail">
                 </div>
                 <div class="form-item column2">
-                    <label for="reason">How can we help you?</label>
+                    <label>How can we help you?</label>
                     <div>
-                        <label><input type="radio" name="reason" value="General Inquiry" required> General</label>
-                        <label><input type="radio" name="reason" value="Reservation Question"> Reservations</label>
-                        <label><input type="radio" name="reason" value="Website Suggestion"> Website Suggestion</label>
+                        <label><input type="radio" id="General" value="General" required> General</label>
+                        <label><input type="radio" id="Reservations" value="Reservations"> Reservations</label>
+                        <label><input type="radio" id="Website Suggestion" value="Website Suggestion"> Website Suggestion</label>
                     </div>
                 </div>
-                <div class="form-item column 2" center-text>
-                    <label class="center-text" for="feedback">Message:</label>
+                <div class="form-item center-text">
+                    <label style="text-align: left;" for="feedback">Message:</label>
                     <textarea name="feedback" id="feedback" rows="4" placeholder="Type Message Here"></textarea>
                 </div>
             </fieldset>
-            <div class="center-text">
-                <button type="Send Message">Submit Poll</button>
+            <div class="form-item">
+                <label for="news letter">Subscribe to news letter?</label>
+                <input type="checkbox" id="news letter" name="news letter">
+            </div>
+            <div style="text-align: Right;">
+                <button type="Submit">Send Message</button>
             </div>
         </form>
     </main>
