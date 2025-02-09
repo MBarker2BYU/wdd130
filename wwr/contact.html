@@ -27,61 +27,73 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="rapid-adventures">
             <div>
                 <h1>Rapid Adventures</h1>
                 <img src="./images/rapid_adventure2.jpg" alt="Rapid Adventure">
             </div>
         </section>
-        <section class="adenture">
+        <section class="our-team">
             <h2>Meet Our Teams</h2>
-            <div class="adventure-flex-container">
-                <figure class="adventure-item">
+            <div class="our-team-flex-container">
+                <figure>
                     <img src="./images/captian.jpg" alt="Employee 1">
                     <p>Larry</p>
                 </figure>
-                <figure class="adventure-item">
+                <figure>
                     <img src="./images/captian.jpg" alt="Employee 2">
                     <p>Moe</p>
                 </figure>
-                <figure class="adventure-item">
+                <figure>
                     <img src="./images/captian.jpg" alt="Employee 3">
                     <p>Curly</p>
                 </figure>
+                <figure>
+                    <img src="./images/captian.jpg" alt="Employee 4">
+                    <p>Bill</p>
+                </figure>
+                <figure>
+                    <img src="./images/captian.jpg" alt="Employee 5">
+                    <p>Ted</p>
+                </figure>
             </div>
         </section>
-        <section>
-            <h2>Contact</h2>
+        <section class="contact-us">
             <div>
-                <p>Address: 101 Way up the river, Riverview, CA 99999
-                </p>
-                <p>Phone: (239) 555-1212</p>
-                <p>Email: general@rapid.adentures.com</p>
+                <h2>Contact Us</h2>
             </div>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d171094.47053914948!2d-118.43607525199906!3d35.72226290653285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1738770759561!5m2!1sen!2sus"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-us-grid-container">
+                <div>
+                    <p>Address: 101 Way up the river, Riverview, CA 92129</p>
+                    <p>Phone: (239) 555-1212</p>
+                    <p>Email: general@rapid.adentures.com</p>
+                </div>
+                <div id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d171094.47053914948!2d-118.43607525199906!3d35.72226290653285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1738770759561!5m2!1sen!2sus"
+                        width="450" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
         <form>
             <fieldset>
                 <legend>Contact Us</legend>
                 <div class="form-item column2">
-                    <label for="name">Name:</label>
+                    <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name">
                 </div>
                 <div class="form-item column2">
-                    <label for="useremail">Email:</label>
+                    <label for="useremail">Email Address:</label>
                     <input type="email" id="useremail" name="usermail">
                 </div>
                 <div class="form-item column2">
                     <label>How can we help you?</label>
                     <div>
-                        <label><input type="radio" id="General" value="General" required> General</label>
+                        <label><input type="radio" id="General" value="General" required checked="true"> General</label>
                         <label><input type="radio" id="Reservations" value="Reservations"> Reservations</label>
-                        <label><input type="radio" id="Website-Suggestion" value="Website-Suggestion"> Website Suggestion</label>
+                        <label><input type="radio" id="Website-Suggestion" value="Website-Suggestion"> Website
+                            Suggestion</label>
                     </div>
                 </div>
                 <div class="form-item center-text">
@@ -89,13 +101,18 @@
                     <textarea name="feedback" id="feedback" rows="4" placeholder="Type Message Here"></textarea>
                 </div>
             </fieldset>
-            <div class="form-item">
-                <label for="news-letter">Subscribe to news letter?</label>
-                <input type="checkbox" id="news-letter" name="news-letter">
+            <div class="submit-controls">
+                <div>
+                    <input type="checkbox" id="news-letter" name="news-letter">
+                    <label for="news-letter">Subscribe to news letter?</label>
+                </div>
+                <div>
+                    <button type="Submit">Send Message</button>
+                </div>
             </div>
-            <div style="text-align: Right;">
+            <!-- <div style="text-align: Right;">
                 <button type="Submit">Send Message</button>
-            </div>
+            </div> -->
         </form>
     </main>
     <footer>

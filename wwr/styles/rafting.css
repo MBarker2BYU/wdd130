@@ -247,6 +247,66 @@ This is to allow center copyright*/
   font-size: 20px;
 }
 
+.rapid-adventures img{
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.rapid-adventures{
+  text-align: center;
+}
+
+.our-team{
+  color: var(--color_white);
+}
+
+.our-team-flex-container{
+  display: flex;
+  justify-content: center;    
+  align-content: space-around;
+  /* border: 2px dashed green; */
+  margin: 3rem;  
+}
+
+.our-team-flex-container figure{
+  font-size: 20px;
+  /* border-radius: 10px; */
+  margin: 3px 3%;
+  width: 15%;
+  text-align: center;
+  text-shadow: 4px 4px 6px var(--shadow_color);
+}
+
+.our-team-flex-container img{
+  border-radius: 10px;  
+}
+
+.contact-us{
+  background: var(--accent2_color);
+  color: var(--color_white); 
+  font-size: 16px; 
+  font-weight: 500;
+}
+
+.contact-us h2{  
+  background: var(--accent2_color);
+  color: var(--color_white);  
+  padding-top: 25px;
+}
+
+.contact-us-grid-container{
+  margin: 1rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: .75fr auto;
+  align-items: center;
+  padding: 0px 125px 30px;  
+}
+
+#map{
+  text-align: center;  
+}
+
 form{
   width: 800px;
   margin: 2rem auto;
@@ -307,6 +367,17 @@ button{
   width: 150px;       
 }
 
+.submit-controls{
+  display: grid;
+  grid-template-columns: 610px auto;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#subscribe{
+  width: 500px;
+}
+
 .form-item {
   display: grid;
   align-items:center;    
@@ -318,6 +389,5 @@ button{
 }
 
 .column2 {
-  grid-template-columns: 1fr 2fr;    
+  grid-template-columns: 0.75fr 2.5fr;    
 }
-
