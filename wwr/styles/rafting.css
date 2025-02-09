@@ -383,6 +383,10 @@ button{
   margin-bottom: 10px;
 }
 
+#message-area{
+  resize: none;
+}
+
 .form-item {
   display: grid;
   align-items:center;    
