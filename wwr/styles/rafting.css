@@ -288,19 +288,19 @@ This is to allow center copyright*/
   font-weight: 500;
 }
 
-.contact-us h2{  
-  background: var(--accent2_color);
-  color: var(--color_white);  
-  padding-top: 25px;
+.contact-us h2{
+  text-align: center;
+  color: white;
+  padding-top: 20px;
 }
 
 .contact-us-grid-container{
-  margin: 1rem;
-  text-align: left;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
   display: grid;
-  grid-template-columns: .75fr auto;
-  align-items: center;
-  padding: 0px 125px 30px;  
+  grid-template-columns: 1fr 1fr;
+  color: var(--color_white)   
 }
 
 #map{
@@ -399,4 +399,8 @@ button{
 
 .column2 {
   grid-template-columns: 0.75fr 2.5fr;    
+}
+
+.column3{
+  grid-template-columns: 0.5fr 2.5fr;    
 }
