@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew D. Barker | CSS: Home Page</title>
+    <meta name="description" content="WDD130: Web Fundamwentals White Water Rafting 'Home' page.">
+    <meta name="author" content="Matthew D. Barker">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Brush+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="./images/Rapid_Adventures_Logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="primary-color-section hero">
+            <h1 class="hero-h1-home">LIFE IS A JOURNEY, START YOURS TODAY!</h1>
+            <img src="./images/rapid_adventure4.jpg" alt="Rapid Adventure 4">
+        </section>
+        <section class="secondary-color-section">
+            <h2>STAY UP TO DATE WITH OUR NEWSLETTER "THE RAPID!"</h2>
+            <form class="form-home">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Full Name Here" class="input-home">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Here" class="input-home">
+                <button type="submit" class="button-home">SUBSCRIBE</button> 
+            </form>
+        </section>
+        <section class="primary-color-section">
+            <h2>WHAT ARE YOU WAITING FOR?</h2>
+            <form action="trips.html" class="redirect-form">
+                <label for="book">Suit up and lets get wet today!</label>
+                <button type="submit" class="button-redirect" id="book" name="book" >LET'S BOOK IT!</button>
+            </form>
+            <div class="grid-container-base ad-grid-container">
+                <figure>
+                    <img src="./images/rapid_adventure1.jpg" alt="ra1">
+                    <p>FROM A LEISURELY PADDLE DOWN RIVER...</p>
+                </figure>
+                <figure>
+                    <img src="./images/rapid_adventure3.jpg" alt="ra2">
+                    <p> INTO THE MOUNTH OF THE BEAST!</p>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div class="footer-social-media-hidden">
+            </div>    
+            <div class="footer-copyright">
+                <p>&copy; 2025 Rapid Adventures. | Matthew D. Barker</p>
+            </div>
+            <div class="footer-social-media">
+                <img src="./images/facebook.png" alt="Facebook">
+                <img src="./images/x_icon.png" alt="X">
+                <img src="./images/instagram.png" alt="Instagram">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
