@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
     <header>
         <img src="./images/Rapid_Adventures_Logo.png" alt="Logo" class="logo">
@@ -25,20 +27,93 @@
         </nav>
     </header>
     <main>
-        <section class="primary-color-section">
-            <h1>RAPID ADVENTURES</h1>
+        <section class="primary-color-section hero">
+            <h1 class="hero-h1-trips">WE WANT TO HEAR FROM YOU!</h1>
+            <img src="./images/rapid_adventure2.jpg" alt="Rapid Adventure 2">
         </section>
         <section class="secondary-color-section">
             <h2>MEET THE TEAM</h2>
+            <div class="our-team flex-container-base">
+                <figure>
+                    <img src="./images/captian.jpg" alt="Captian">
+                    <p>CLASS I GUIDE</p>
+                    <p>Matthew D. Barker</p>
+                </figure>
+                <figure>
+                    <img src="./images/Crawl.png" alt="Crawl">
+                    <p>CLASS II GUIDE</p>
+                    <p>'Crawl'</p>
+                </figure>
+                <figure>
+                    <img src="./images/Bill.png" alt="Bill s. Preston">
+                    <p>CLASS III GUIDE</p>
+                    <p>Bill S. Preston</p>
+                </figure>
+                <figure>
+                    <img src="./images/Ted.png" alt="Ted 'Theodore' Logan">
+                    <p>CLASS IV GUIDE</p>
+                    <p>Ted 'Theodore' Logan</p>
+                </figure>
+                <figure>
+                    <img src="./images/Reaper.png" alt="The Reaper">
+                    <p>CLASS V GUIDE</p>
+                    <p>The Reaper</p>
+                </figure>
+            </div>
         </section>
         <section class="primary-color-section">
             <h2>CONTACT US</h2>
+            <div class="address-map flex-container-base">
+                <div>
+                    <p><strong>Address:</strong> 101 Down River, Riverview, CA 92129</p>
+                    <p><strong>Phone:</strong> (239) 555-1212</p>
+                    <p><strong>Email:</strong> info@rapid.adventures.com</p>
+                </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d171094.47053914948!2d-118.43607525199906!3d35.72226290653285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1738770759561!5m2!1sen!2sus"
+                        width="350" height="250" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="contact-form-item columns-1">
+                    <label for="fullname">FULL NAME:</label>
+                    <input type="text" id="fullname" name="fullname"></input>
+                </div>
+                <div class="contact-form-item columns-1">                
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email"></input>
+                </div>
+                <div class="contact-form-item columns-1">
+                    <label for="options">HOW CAN WE HELP?</label>
+                    <div id="options" name="options">
+                        <label><input type="radio" id="general" name="general" value="General" required checked="checked"
+                                name="reason">GENERAL</label>
+                        <label><input type="radio" id="reservations" name="reservations" value="Reservations" name="reason">
+                            RESERVATIONS</label>
+                        <label><input type="radio" id="website-suggestion" name="website-suggestion" value="Website-Suggestion" name="reason">
+                            WEBSITE SUGGESTIONS</label>
+                    </div>
+                </div>
+                <div class="contact-form-item columns-1">
+                    <label for="message">MESSAGE:</label>
+                    <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+                <div class="contact-form-item columns-2">
+                    <div>
+                        <label for="newsletter">SUBSCRIBE TO THE RAPIDS NEWSLETTER?</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" ></input>                        
+                    </div>
+                    <button type="submit" name="send-message" id="send-message">SEND MESSAGE</button>
+                </div>                
+            </form>
         </section>
     </main>
     <footer>
         <div>
             <div class="footer-social-media-hidden">
-            </div>    
+            </div>
             <div class="footer-copyright">
                 <p>&copy; 2025 Rapid Adventures. | Matthew D. Barker</p>
             </div>
@@ -50,4 +125,5 @@
         </div>
     </footer>
 </body>
+
 </html>
