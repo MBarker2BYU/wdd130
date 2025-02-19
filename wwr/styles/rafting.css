@@ -5,7 +5,7 @@
     /*Dark Blue*/
     --accent1-color: #01A7C2;
     /*Moonstone*/
-    --accent1-color-with-alpha: #01A7C275;
+    --accent1-color-with-alpha: #01A7C250;
     /*Moonstone*/
     --accent2-color: #EAEBED;
     /*Anti-flash white*/
@@ -29,6 +29,10 @@
     --social-media-width: 128px;
 
     --debug-border-color: rgba(255, 0, 0, 0);
+
+    --Transparent: #00000050;
+    --Transparent-border: #00000075;
+
 }
 
 /* base */
@@ -67,7 +71,7 @@ textarea {
 }
 
 input {
-    text-shadow: 4px 4px 6px var(--shadow-color);
+    text-shadow: 4px 4px 6px var(--shadow-color);    
 }
 
 label {
@@ -184,8 +188,11 @@ nav a:hover {
     border-radius: 10px;
     align-content: center;
 
-    background-color: var(--accent1-color-with-alpha);
-    border: 1px solid var(--accent1-color);
+    background-color: var(--Transparent);
+    border: 1px solid var(--Transparent-border);
+
+    /* background-color: var(--accent1-color-with-alpha);
+    border: 1px solid var(--accent1-color); */
     text-shadow: 4px 4px 6px var(--shadow-color);
 }
 
@@ -456,6 +463,7 @@ footer img {
 .footer-social-media-hidden {
     margin-right: auto;
     width: var(--social-media-width);
+    color: var(--color-black);
 }
 
 .footer-social-media {
