@@ -1,0 +1,78 @@
+:root {
+    --primary_color: #604C4A;
+    --secondary_color: #4D9193;
+    --accent1_color: #3099EA;
+    --accent2_color: #171717;
+
+    --color_white: #ffffff;
+    --color_black: #000000;
+
+    --shadow_color: var(--color_black);
+
+    --transparent_secondary_color: rgba(77, 145, 147, .5);
+
+    --heading_font: 'Nanum Brush Script', sans-serif;
+    --text_font: 'Caveat', serif;
+}
+
+h1 {
+    color: white;
+    text-shadow: 4px 4px 6px var(--shadow_color);
+}
+
+h2 {
+    color: white;
+    text-shadow: 4px 4px 6px var(--shadow_color);
+}
+
+header {
+    background: var(--accent1_color);
+    color: var(--secondary_color);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1frm auto;
+}
+
+header image {
+    width: 225px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    width: 225px;
+    height: auto;
+}
+
+nav a {
+    color: var(--color_white);
+    text-shadow: 4px 4px 6px var(--shadow_color);
+    margin: 0 3rem;
+    text-decoration: none;
+    font-family: var(--heading_font);
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+
+  nav a:hover {
+    color: var(--secondary_color);
+  }
+
+body {
+    font-family: var(--text_font);
+    margin: 0;
+    padding: 0;
+    color: var(--accent2-color);
+    background-color: var(--primary_color);
+}
+
+footer{
+    background-color: var(--accent2_color);
+    color: var(--color_white);
+    text-align: center;
+    padding: 1rem;
+}
